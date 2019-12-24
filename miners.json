@@ -84,12 +84,12 @@
     },
     "gminer": {
         "name": "GMiner",
-        "version": "1.88",
-        "previous": "1.87",
+        "version": "1.89",
+        "previous": "1.88",
         "source": "https://github.com/develsoftware/GMinerRelease/releases/latest",
         "download": {
-            "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/1.88/gminer_1_88_windows64.zip",
-            "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/1.88/gminer_1_88_linux64.tar.xz"
+            "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/1.89/gminer_1_89_windows64.zip",
+            "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/1.89/gminer_1_89_linux64.tar.xz"
         },
         "cmd": {
             "ethash": "miner --algo ethash --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
