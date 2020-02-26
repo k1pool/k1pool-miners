@@ -30,12 +30,12 @@
     },
     "cryptodredge": {
         "name": "CryptoDredge",
-        "version": "0.22.0",
-        "previous": "0.21.0",
+        "version": "0.23.0",
+        "previous": "0.22.0",
         "source": "https://github.com/technobyl/CryptoDredge/releases",
         "download": {
-            "windows": "https://github.com/technobyl/CryptoDredge/releases/download/v0.22.0/CryptoDredge_0.22.0_cuda_10.0_windows.zip",
-            "linux": "https://github.com/technobyl/CryptoDredge/releases/download/v0.22.0/CryptoDredge_0.22.0_cuda_10.0_linux.tar.gz"
+            "windows": "https://github.com/technobyl/CryptoDredge/releases/download/v0.23.0/CryptoDredge_0.23.0_cuda_10.0_windows.zip",
+            "linux": "https://github.com/technobyl/CryptoDredge/releases/download/v0.23.0/CryptoDredge_0.23.0_cuda_10.0_linux.tar.gz"
         },
         "cmd": {
             "lyra2v3": "cryptodredge -a lyra2v3 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
@@ -84,12 +84,12 @@
     },
     "gminer": {
         "name": "GMiner",
-        "version": "1.96",
-        "previous": "1.95",
+        "version": "1.98",
+        "previous": "1.97",
         "source": "https://github.com/develsoftware/GMinerRelease/releases/latest",
         "download": {
-            "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/1.96/gminer_1_96_windows64.zip",
-            "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/1.96/gminer_1_96_linux64.tar.xz"
+            "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/1.98/gminer_1_98_windows64.zip",
+            "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/1.98/gminer_1_98_linux64.tar.xz"
         },
         "cmd": {
             "ethash": "miner --algo ethash --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
@@ -101,12 +101,12 @@
     },
     "lolminer": {
         "name": "lolMiner",
-        "version": "0.9.7",
-        "previous": "0.9.6",
+        "version": "0.9.8",
+        "previous": "0.9.7",
         "source": "https://github.com/Lolliedieb/lolMiner-releases/releases/latest",
         "download": {
-            "windows": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/0.97/lolMiner_v097_Win64.zip",
-            "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/0.97/lolMiner_v097_Lin64.tar.gz"
+            "windows": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/0.98/lolMiner_v098_Win64.zip",
+            "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/0.98/lolMiner_v0981_Lin64.tar.gz"
         },
         "cmd": {
             "equihash 144\/5": "lolMiner --coin AUTO144_5 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
@@ -132,12 +132,12 @@
     },
     "nbminer": {
         "name": "NBMiner",
-        "version": "26.2",
-        "previous": "26.1",
+        "version": "27.2",
+        "previous": "27.1",
         "source": "https://github.com/NebuTech/NBMiner/releases/latest",
         "download": {
-            "windows": "https://github.com/NebuTech/NBMiner/releases/download/v26.2/NBMiner_26.2_Win.zip",
-            "linux": "https://github.com/NebuTech/NBMiner/releases/download/v26.2/NBMiner_26.2_Linux.tgz"
+            "windows": "https://github.com/NebuTech/NBMiner/releases/download/v27.2/NBMiner_27.2_Win.zip",
+            "linux": "https://github.com/NebuTech/NBMiner/releases/download/v27.2/NBMiner_27.2_Linux.tgz"
         },
         "cmd": {
             "ethash": "nbminer -a ethash -o nicehash+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
