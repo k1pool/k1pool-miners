@@ -1,18 +1,21 @@
 {
     "bminer": {
         "name": "Bminer",
-        "version": "16.0.3",
-        "previous": "16.0.2",
+        "version": "16.1.1",
+        "previous": "16.1.0",
         "source": "https://www.bminer.me/releases/",
         "download": {
-            "windows": "https://www.bminercontent.com/releases/bminer-v16.0.3-5afc0fc-amd64.zip",
-            "linux": "https://www.bminercontent.com/releases/bminer-v16.0.3-5afc0fc-amd64.tar.xz"
+            "windows": "https://www.bminercontent.com/releases/bminer-v16.1.1-4cf17ad-amd64.zip",
+            "linux": "https://www.bminercontent.com/releases/bminer-v16.1.1-4cf17ad-amd64.tar.xz"
         },
         "cmd": {
             "equihash": "bminer -uri stratum://[WALLET].[WORKER]@[SERVER]:[PORT]",
             "ethash": "bminer -uri ethash://[WALLET].[WORKER]@[SERVER]:[PORT]",
             "equihash 144\/5": "bminer -uri equihash1445://[WALLET].[WORKER]@[SERVER]:[PORT] -pers auto",
             "cuckoo": "bminer -uri cuckaroo29d://[WALLET].[WORKER]:x@[SERVER]:[PORT] -pers auto"
+        },
+        "cmdhi": {
+            "ethash": "bminer -uri ethstratum://[WALLET].[WORKER]@[SERVER]:[PORT]"
         }
     },
     "claymore": {
@@ -25,6 +28,9 @@
             "linux": "https://mega.nz/#F!O4YA2JgD!n2b4iSHQDruEsYUvTQP5_w"
         },
         "cmd": {
+            "ethash": "ethdcrminer64 -epool [SERVER]:[PORT] -ewal [WALLET] -epsw x -eworker [WORKER] -esm 0 -allpools 1 -allcoins -1"
+        },
+        "cmdhi": {
             "ethash": "ethdcrminer64 -epool [SERVER]:[PORT] -ewal [WALLET] -epsw x -eworker [WORKER] -esm 3 -allpools 1 -allcoins -1"
         }
     },
@@ -65,6 +71,9 @@
             "linux": "https://github.com/ethereum-mining/ethminer/releases/download/v0.18.0/ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz"
         },
         "cmd": {
+            "ethash": "ethminer -P stratum1+tcp://[WALLET].[WORKER]:password@[SERVER]:[PORT]"
+        }
+        "cmdhi": {
             "ethash": "ethminer -P stratum2+tcp://[WALLET].[WORKER]:password@[SERVER]:[PORT]"
         }
     },
@@ -84,19 +93,23 @@
     },
     "gminer": {
         "name": "GMiner",
-        "version": "1.98",
-        "previous": "1.97",
+        "version": "2.06",
+        "previous": "2.05",
         "source": "https://github.com/develsoftware/GMinerRelease/releases/latest",
         "download": {
-            "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/1.98/gminer_1_98_windows64.zip",
-            "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/1.98/gminer_1_98_linux64.tar.xz"
+            "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/2.06/gminer_2_06_windows64.zip",
+            "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/2.06/gminer_2_06_linux64.tar.xz"
         },
         "cmd": {
             "ethash": "miner --algo ethash --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "equihash 125\/4": "miner --algo 125_4 --pers auto --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "equihash 144\/5": "miner --algo 144_5 --pers auto --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "equihash 192\/7": "miner --algo 192_7 --pers auto --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
-            "cuckoo": "miner --algo cuckarood29 --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x"
+            "cuckoo": "miner --algo cuckarood29 --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
+            "kawpow": "miner --algo kawpow --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x"
+        },
+        "cmdhi": {
+            "ethash": "miner --algo ethash --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x --proto stratum"
         }
     },
     "lolminer": {
@@ -117,12 +130,12 @@
     },
     "miniz": {
         "name": "miniZ",
-        "version": "1.5t",
-        "previous": "1.5s",
+        "version": "1.5t2",
+        "previous": "1.5t",
         "source": "https://miniz.ch/download/",
         "download": {
-            "windows": "https://miniz.ch/?smd_process_download=1&download_id=3369",
-            "linux": "https://miniz.ch/?smd_process_download=1&download_id=3370"
+            "windows": "https://miniz.ch/?smd_process_download=1&download_id=3594",
+            "linux": "https://miniz.ch/?smd_process_download=1&download_id=3563"
         },
         "cmd": {
             "equihash 125\/4": "miniZ --par=125,4 --pers auto --url=[WALLET].[WORKER]@[SERVER]:[PORT] --extra",
@@ -132,16 +145,20 @@
     },
     "nbminer": {
         "name": "NBMiner",
-        "version": "27.2",
-        "previous": "27.1",
+        "version": "29.1",
+        "previous": "29.0",
         "source": "https://github.com/NebuTech/NBMiner/releases/latest",
         "download": {
-            "windows": "https://github.com/NebuTech/NBMiner/releases/download/v27.2/NBMiner_27.2_Win.zip",
-            "linux": "https://github.com/NebuTech/NBMiner/releases/download/v27.2/NBMiner_27.2_Linux.tgz"
+            "windows": "https://github.com/NebuTech/NBMiner/releases/download/v29.1/NBMiner_29.1_Win.zip",
+            "linux": "https://github.com/NebuTech/NBMiner/releases/download/v29.1/NBMiner_29.1_Linux.tgz"
         },
         "cmd": {
-            "ethash": "nbminer -a ethash -o nicehash+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
-            "cuckoo": "nbminer -a cuckarood -o nicehash+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]"
+            "ethash": "nbminer -a ethash -o ethproxy+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
+            "cuckoo": "nbminer -a cuckarood -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
+            "kawpow": "nbminer -a kawpow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]"
+        },
+        "cmdhi": {
+            "ethash": "nbminer -a ethash -o nicehash+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]"
         }
     },
     "phoenixminer": {
@@ -216,12 +233,12 @@
     },
     "wildrig-multi": {
         "name": "WildRig Multi",
-        "version": "0.20.1",
-        "previous": "0.20.0.3",
+        "version": "0.20.5.3",
+        "previous": "0.20.5.2",
         "source": "https://bitcointalk.org/index.php?topic=5023676.0",
         "download": {
-            "windows": "https://github.com/andru-kun/wildrig-multi/releases/download/0.20.1/wildrig-multi-windows-0.20.1.7z",
-            "linux": "https://github.com/andru-kun/wildrig-multi/releases/download/0.20.1/wildrig-multi-linux-0.20.1.tar.gz"
+            "windows": "https://github.com/andru-kun/wildrig-multi/releases/download/0.20.5b/wildrig-multi-windows-0.20.5.3.7z",
+            "linux": "https://github.com/andru-kun/wildrig-multi/releases/download/0.20.5b/wildrig-multi-linux-0.20.5.3.tar.gz"
         },
         "cmd": {
             "lyra2v3": "wildrig --print-full --algo lyra2v3 --opencl-threads auto --opencl-launch auto --url [SERVER]:[PORT] --user [WALLET].[WORKER] --pass x",
