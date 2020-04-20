@@ -72,7 +72,7 @@
         },
         "cmd": {
             "ethash": "ethminer -P stratum1+tcp://[WALLET].[WORKER]:password@[SERVER]:[PORT]"
-        }
+        },
         "cmdhi": {
             "ethash": "ethminer -P stratum2+tcp://[WALLET].[WORKER]:password@[SERVER]:[PORT]"
         }
