@@ -219,8 +219,8 @@
     },
     "tt-miner": {
         "name": "TT-Miner",
-        "version": "3.1.1",
-        "previous": "3.1.0",
+        "version": "4.0.0",
+        "previous": "3.1.1",
         "source": "https://bitcointalk.org/index.php?topic=5025783.0",
         "download": {
             "windows": "https://tradeproject.de/download/Miner/TT-Miner.zip",
@@ -228,7 +228,8 @@
         },
         "cmd": {
             "ethash": "TT-Miner -a ETHASH -P [WALLET].[WORKER]@[SERVER]:[PORT]",
-            "lyra2v3": "TT-Miner -a LYRA2V3 -P [WALLET].[WORKER]@[SERVER]:[PORT]"
+            "lyra2v3": "TT-Miner -a LYRA2V3 -P [WALLET].[WORKER]@[SERVER]:[PORT]",
+            "kawpow": "TT-Miner -a KAWPOW -P [WALLET].[WORKER]@[SERVER]:[PORT]"
         }
     },
     "wildrig-multi": {
