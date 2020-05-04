@@ -93,12 +93,12 @@
     },
     "gminer": {
         "name": "GMiner",
-        "version": "2.06",
-        "previous": "2.05",
+        "version": "2.09",
+        "previous": "2.08",
         "source": "https://github.com/develsoftware/GMinerRelease/releases/latest",
         "download": {
-            "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/2.06/gminer_2_06_windows64.zip",
-            "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/2.06/gminer_2_06_linux64.tar.xz"
+            "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/2.09/gminer_2_09_windows64.zip",
+            "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/2.09/gminer_2_09_linux64.tar.xz"
         },
         "cmd": {
             "ethash": "miner --algo ethash --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
@@ -145,12 +145,12 @@
     },
     "nbminer": {
         "name": "NBMiner",
-        "version": "29.1",
-        "previous": "29.0",
+        "version": "30.1",
+        "previous": "29.1",
         "source": "https://github.com/NebuTech/NBMiner/releases/latest",
         "download": {
-            "windows": "https://github.com/NebuTech/NBMiner/releases/download/v29.1/NBMiner_29.1_Win.zip",
-            "linux": "https://github.com/NebuTech/NBMiner/releases/download/v29.1/NBMiner_29.1_Linux.tgz"
+            "windows": "https://github.com/NebuTech/NBMiner/releases/download/v30.1/NBMiner_30.1_Win.zip",
+            "linux": "https://github.com/NebuTech/NBMiner/releases/download/v30.1/NBMiner_30.1_Linux.tgz"
         },
         "cmd": {
             "ethash": "nbminer -a ethash -o ethproxy+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
@@ -190,15 +190,16 @@
     },
     "t-rex": {
         "name": "T-Rex Miner",
-        "version": "0.14.6",
-        "previous": "0.14.4",
+        "version": "0.15.3",
+        "previous": "0.14.6",
         "source": "https://github.com/trexminer/T-Rex/releases",
         "download": {
-            "windows": "https://github.com/trexminer/T-Rex/releases/download/0.14.6/t-rex-0.14.6-win-cuda10.0.zip",
-            "linux": "https://github.com/trexminer/T-Rex/releases/download/0.14.6/t-rex-0.14.6-linux-cuda10.0.tar.gz"
+            "windows": "https://github.com/trexminer/T-Rex/releases/download/0.15.3/t-rex-0.15.3-win-cuda10.0.zip",
+            "linux": "https://github.com/trexminer/T-Rex/releases/download/0.15.3/t-rex-0.15.3-linux-cuda10.0.tar.gz"
         },
         "cmd": {
-            "x16rt": "t-rex -a x16rt -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
+            "x16rt": "t-rex -a x16rt -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
+            "kawpow": "t-rex -a kawpow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
         }
     },
     "teamredminer": {
