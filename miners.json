@@ -1,18 +1,19 @@
 {
     "bminer": {
         "name": "Bminer",
-        "version": "16.1.1",
-        "previous": "16.1.0",
+        "version": "16.2.0",
+        "previous": "16.1.1",
         "source": "https://www.bminer.me/releases/",
         "download": {
-            "windows": "https://www.bminercontent.com/releases/bminer-v16.1.1-4cf17ad-amd64.zip",
-            "linux": "https://www.bminercontent.com/releases/bminer-v16.1.1-4cf17ad-amd64.tar.xz"
+            "windows": "https://www.bminercontent.com/releases/bminer-v16.2.0-d0b21b5-amd64.zip",
+            "linux": "https://www.bminercontent.com/releases/bminer-v16.2.0-d0b21b5-amd64.tar.xz"
         },
         "cmd": {
             "equihash": "bminer -uri stratum://[WALLET].[WORKER]@[SERVER]:[PORT]",
             "ethash": "bminer -uri ethash://[WALLET].[WORKER]@[SERVER]:[PORT]",
             "equihash 144\/5": "bminer -uri equihash1445://[WALLET].[WORKER]@[SERVER]:[PORT] -pers auto",
-            "cuckoo": "bminer -uri cuckaroo29d://[WALLET].[WORKER]:x@[SERVER]:[PORT] -pers auto"
+            "cuckoo": "bminer -uri cuckaroo29d://[WALLET].[WORKER]:x@[SERVER]:[PORT]",
+            "kawpow": "bminer -uri raven://[WALLET].[WORKER]:x@[SERVER]:[PORT]"
         },
         "cmdhi": {
             "ethash": "bminer -uri ethstratum://[WALLET].[WORKER]@[SERVER]:[PORT]"
@@ -145,12 +146,12 @@
     },
     "nbminer": {
         "name": "NBMiner",
-        "version": "30.1",
-        "previous": "29.1",
+        "version": "30.2",
+        "previous": "30.1",
         "source": "https://github.com/NebuTech/NBMiner/releases/latest",
         "download": {
-            "windows": "https://github.com/NebuTech/NBMiner/releases/download/v30.1/NBMiner_30.1_Win.zip",
-            "linux": "https://github.com/NebuTech/NBMiner/releases/download/v30.1/NBMiner_30.1_Linux.tgz"
+            "windows": "https://github.com/NebuTech/NBMiner/releases/download/v30.2/NBMiner_30.2_Win.zip",
+            "linux": "https://github.com/NebuTech/NBMiner/releases/download/v30.2/NBMiner_30.2_Linux.tgz"
         },
         "cmd": {
             "ethash": "nbminer -a ethash -o ethproxy+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
@@ -190,12 +191,12 @@
     },
     "t-rex": {
         "name": "T-Rex Miner",
-        "version": "0.15.3",
-        "previous": "0.14.6",
+        "version": "0.15.4",
+        "previous": "0.15.3",
         "source": "https://github.com/trexminer/T-Rex/releases",
         "download": {
-            "windows": "https://github.com/trexminer/T-Rex/releases/download/0.15.3/t-rex-0.15.3-win-cuda10.0.zip",
-            "linux": "https://github.com/trexminer/T-Rex/releases/download/0.15.3/t-rex-0.15.3-linux-cuda10.0.tar.gz"
+            "windows": "https://github.com/trexminer/T-Rex/releases/download/0.15.4/t-rex-0.15.4-win-cuda10.0.zip",
+            "linux": "https://github.com/trexminer/T-Rex/releases/download/0.15.4/t-rex-0.15.4-linux-cuda10.0.tar.gz"
         },
         "cmd": {
             "x16rt": "t-rex -a x16rt -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
@@ -220,8 +221,8 @@
     },
     "tt-miner": {
         "name": "TT-Miner",
-        "version": "4.0.0",
-        "previous": "3.1.1",
+        "version": "4.0.3",
+        "previous": "4.0.0",
         "source": "https://bitcointalk.org/index.php?topic=5025783.0",
         "download": {
             "windows": "https://tradeproject.de/download/Miner/TT-Miner.zip",
