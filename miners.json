@@ -127,7 +127,7 @@
             "equihash 192\/7": "lolMiner --coin AUTO192_7 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "cuckoo": "lolMiner --coin GRIN-AD29 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "equihash 125\/4": "lolMiner --coin ZEL --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
-            "ethash": "lolMiner -a ETHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x --ethstratum ETHPROXY"
+            "ethash": "lolMiner -a ETHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x --ethstratum ETHPROXY --enablezilcache"
         }
     },
     "miniz": {
