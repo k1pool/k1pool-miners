@@ -78,12 +78,12 @@
     },
     "gminer": {
         "name": "GMiner",
-        "version": "2.54",
-        "previous": "2.45",
+        "version": "2.65",
+        "previous": "2.64",
         "source": "https://github.com/develsoftware/GMinerRelease/releases/latest",
         "download": {
-            "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/2.54/gminer_2_54_windows64.zip",
-            "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/2.54/gminer_2_54_linux64.tar.xz"
+            "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/2.65/gminer_2_65_windows64.zip",
+            "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/2.65/gminer_2_65_linux64.tar.xz"
         },
         "cmd": {
             "ethash": "miner --algo eth --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
@@ -101,12 +101,12 @@
     },
     "lolminer": {
         "name": "lolMiner",
-        "version": "1.29",
-        "previous": "1.24a",
+        "version": "1.31",
+        "previous": "1.29",
         "source": "https://github.com/Lolliedieb/lolMiner-releases/releases/latest",
         "download": {
-            "windows": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.28/lolMiner_v1.28a_Win64.zip",
-            "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.29/lolMiner_v1.29_Lin64.tar.gz"
+            "windows": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.31/lolMiner_v1.31_Win64.zip",
+            "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.31/lolMiner_v1.31_Lin64.tar.gz"
         },
         "cmd": {
             "equihash 144\/5": "lolMiner --coin AUTO144_5 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
@@ -114,7 +114,8 @@
             "cuckoo": "lolMiner --coin GRIN-AD29 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "equihash 125\/4": "lolMiner --coin ZEL --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "ethash": "lolMiner -a ETHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x --ethstratum ETHPROXY --enablezilcache",
-            "etchash": "lolMiner -a ETCHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x --ethstratum ETHPROXY --enablezilcache"
+            "etchash": "lolMiner -a ETCHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x --ethstratum ETHPROXY --enablezilcache",
+            "autolykos2": "lolMiner -a AUTOLYKOS2 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x"
         },
         "cmdhi": {
             "ethash": "lolMiner -a ETHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x --ethstratum ETHV1 --enablezilcache",
@@ -123,12 +124,12 @@
     },
     "miniz": {
         "name": "miniZ",
-        "version": "1.7x3",
-        "previous": "1.6w2",
+        "version": "1.8y3",
+        "previous": "1.7x3",
         "source": "https://miniz.ch/download/",
         "download": {
-            "windows": "https://miniz.ch/?smd_process_download=1&download_id=4211",
-            "linux": "https://miniz.ch/?smd_process_download=1&download_id=4212"
+            "windows": "https://miniz.ch/?smd_process_download=1&download_id=4369",
+            "linux": "https://miniz.ch/?smd_process_download=1&download_id=4368"
         },
         "cmd": {
             "equihash 125\/4": "miniZ --par=125,4 --pers auto --url=[WALLET].[WORKER]@[SERVER]:[PORT] --extra",
@@ -138,18 +139,19 @@
     },
     "nbminer": {
         "name": "NBMiner",
-        "version": "37.3",
-        "previous": "36.1",
+        "version": "39.1",
+        "previous": "37.3",
         "source": "https://github.com/NebuTech/NBMiner/releases/latest",
         "download": {
-            "windows": "https://github.com/NebuTech/NBMiner/releases/download/v37.3/NBMiner_37.3_Win.zip",
-            "linux": "https://github.com/NebuTech/NBMiner/releases/download/v37.3/NBMiner_37.3_Linux.tgz"
+            "windows": "https://github.com/NebuTech/NBMiner/releases/download/v39.1/NBMiner_39.1_Win.zip",
+            "linux": "https://github.com/NebuTech/NBMiner/releases/download/v39.1/NBMiner_39.1_Linux.tgz"
         },
         "cmd": {
             "ethash": "nbminer -a ethash -o ethproxy+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
             "etchash": "nbminer -a etchash -o ethproxy+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
             "cuckoo": "nbminer -a cuckarood -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
-            "kawpow": "nbminer -a kawpow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]"
+            "kawpow": "nbminer -a kawpow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
+            "autolykos2": "nbminer -a autolykos2 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]"
         },
         "cmdhi": {
             "ethash": "nbminer -a ethash -o nicehash+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
@@ -158,12 +160,12 @@
     },
     "phoenixminer": {
         "name": "PhoenixMiner",
-        "version": "5.6d",
-        "previous": "5.5c",
+        "version": "5.7b",
+        "previous": "5.6d",
         "source": "https://phoenixminer.info/downloads/",
         "download": {
-            "windows": "https://phoenixminer.info/downloads/PhoenixMiner_5.6d_Windows.zip",
-            "linux": "https://phoenixminer.info/downloads/PhoenixMiner_5.6d_Linux.tar.gz"
+            "windows": "https://phoenixminer.info/downloads/PhoenixMiner_5.7b_Windows.zip",
+            "linux": "https://phoenixminer.info/downloads/PhoenixMiner_5.7b_Linux.tar.gz"
         },
         "cmd": {
             "ethash": "phoenixminer -worker [WORKER] -pool [SERVER]:[PORT] -wal [WALLET] -pass x -log 0 -dagrestart 0 -proto 2"
@@ -188,18 +190,19 @@
     },
     "t-rex": {
         "name": "T-Rex Miner",
-        "version": "0.20.3",
-        "previous": "0.19.11",
-        "source": "https://trex-miner.com/",
+        "version": "0.21.6",
+        "previous": "0.20.3",
+        "source": "https://github.com/trexminer/T-Rex/releases/latest",
         "download": {
-            "windows": "https://trex-miner.com/download/t-rex-0.20.3-win.zip",
-            "linux": "https://trex-miner.com/download/t-rex-0.20.3-linux.tar.gz"
+            "windows": "https://github.com/trexminer/T-Rex/releases/download/0.21.6/t-rex-0.21.6-win.zip",
+            "linux": "https://github.com/trexminer/T-Rex/releases/download/0.21.6/t-rex-0.21.6-linux.tar.gz"
         },
         "cmd": {
             "x16rt": "t-rex -a x16rt -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER]",
             "kawpow": "t-rex -a kawpow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER]",
             "ethash": "t-rex -a ethash -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER] --extra-dag-epoch 0",
-            "etchash": "t-rex -a etchash -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER] --extra-dag-epoch 0"
+            "etchash": "t-rex -a etchash -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER] --extra-dag-epoch 0",
+            "autolykos2": "t-rex -a autolykos2 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER]"
         },
         "cmdhi": {
             "ethash": "t-rex -a ethash -o stratum2+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER] --extra-dag-epoch 0",
@@ -208,19 +211,20 @@
     },
     "teamredminer": {
         "name": "TeamRedMiner",
-        "version": "0.8.2.1",
-        "previous": "0.8.1",
+        "version": "0.8.4",
+        "previous": "0.8.2.1",
         "source": "https://github.com/todxx/teamredminer/releases",
         "download": {
-            "windows": "https://github.com/todxx/teamredminer/releases/download/0.8.2.1/teamredminer-v0.8.2.1-win.zip",
-            "linux": "https://github.com/todxx/teamredminer/releases/download/0.8.2.1/teamredminer-v0.8.2.1-linux.tgz"
+            "windows": "https://github.com/todxx/teamredminer/releases/download/v0.8.4/teamredminer-v0.8.4-win.zip",
+            "linux": "https://github.com/todxx/teamredminer/releases/download/v0.8.4/teamredminer-v0.8.4-linux.tgz"
         },
         "cmd": {
             "ethash": "teamredminer -a ethash -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x --eth_dag_cache=0",
             "etchash": "teamredminer -a etchash -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
             "x16rt": "teamredminer -a x16rt -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
             "cuckoo": "teamredminer -a cuckarood29_grin -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
-            "lyra2v3": "teamredminer -a lyra2rev3 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
+            "lyra2v3": "teamredminer -a lyra2rev3 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
+            "autolykos2": "teamredminer -a autolykos2 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
         }
     },
     "tt-miner": {
