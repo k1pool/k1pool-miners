@@ -88,6 +88,7 @@
         "cmd": {
             "ethash": "miner --algo eth --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "etchash": "miner --algo etchash --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
+            "equihash 125\/4": "miner --algo 125_4 --pers auto --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "equihash 144\/5": "miner --algo 144_5 --pers auto --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "cuckoo": "miner --algo cuckarood29 --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "kawpow": "miner --algo kawpow --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x"
@@ -109,6 +110,7 @@
         "cmd": {
             "equihash 144\/5": "lolMiner --coin AUTO144_5 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "cuckoo": "lolMiner --coin GRIN-AD29 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
+            "equihash 125\/4": "lolMiner --coin ZEL --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
             "ethash": "lolMiner -a ETHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x --ethstratum ETHPROXY --enablezilcache",
             "etchash": "lolMiner -a ETCHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x --ethstratum ETHPROXY --enablezilcache",
             "autolykos2": "lolMiner -a AUTOLYKOS2 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x"
@@ -128,7 +130,8 @@
             "linux": "https://miniz.ch/?smd_process_download=1&download_id=4368"
         },
         "cmd": {
-            "equihash 144\/5": "miniZ --par=144,5 --pers auto --url=[WALLET].[WORKER]@[SERVER]:[PORT] --extra",
+            "equihash 125\/4": "miniZ --par=125,4 --pers auto --url=[WALLET].[WORKER]@[SERVER]:[PORT] --extra",
+            "equihash 144\/5": "miniZ --par=144,5 --pers auto --url=[WALLET].[WORKER]@[SERVER]:[PORT] --extra"
         }
     },
     "nbminer": {
