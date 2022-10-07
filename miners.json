@@ -30,7 +30,9 @@
     },
     "cmd": {
       "lyra2v3": "cryptodredge -a lyra2v3 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
-      "x16rt": "cryptodredge -a x16rt -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
+      "x16rt": "cryptodredge -a x16rt -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
+      "kawpow": "cryptodredge -a kawpow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
+      "firopow": "cryptodredge -a firopow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
     }
   },
   "dstm": {
@@ -197,6 +199,7 @@
     "cmd": {
       "x16rt": "t-rex -a x16rt -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER]",
       "kawpow": "t-rex -a kawpow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER]",
+      "firopow": "t-rex -a firopow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER]",
       "ethash": "t-rex -a ethash -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER] --extra-dag-epoch 0",
       "etchash": "t-rex -a etchash -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER] --extra-dag-epoch 0",
       "autolykos2": "t-rex -a autolykos2 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET] --worker [WORKER]"
@@ -221,14 +224,16 @@
       "x16rt": "teamredminer -a x16rt -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
       "cuckoo": "teamredminer -a cuckarood29_grin -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
       "lyra2v3": "teamredminer -a lyra2rev3 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
-      "autolykos2": "teamredminer -a autolykos2 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
+      "autolykos2": "teamredminer -a autolykos2 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
+      "kawpow": "teamredminer -a kawpow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
+      "firopow": "teamredminer -a firopow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
     }
   },
   "tt-miner": {
     "name": "TT-Miner",
     "version": "6.1.0",
     "previous": "6.0.0",
-      "source": "https://bitcointalk.org/index.php?topic=5025783.0",
+    "source": "https://bitcointalk.org/index.php?topic=5025783.0",
     "download": {
       "windows": "https://tradeproject.de/download/Miner/TT-Miner.zip",
       "linux": "https://tradeproject.de/download/Miner/TT-Miner.tar.xz"
