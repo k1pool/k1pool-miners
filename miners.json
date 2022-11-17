@@ -12,11 +12,27 @@
       "equihash": "bminer -uri stratum://[WALLET].[WORKER]@[SERVER]:[PORT]",
       "ethash": "bminer -uri ethash://[WALLET].[WORKER]@[SERVER]:[PORT]",
       "equihash 144\/5": "bminer -uri equihash1445://[WALLET].[WORKER]@[SERVER]:[PORT] -pers auto",
-      "cuckoo": "bminer -uri cuckaroo29d://[WALLET].[WORKER]:x@[SERVER]:[PORT]",
       "kawpow": "bminer -uri raven://[WALLET].[WORKER]:x@[SERVER]:[PORT]"
     },
     "cmdhi": {
       "ethash": "bminer -uri ethstratum://[WALLET].[WORKER]@[SERVER]:[PORT]"
+    }
+  },
+  "bzminer": {
+    "name": "Bminer",
+    "version": "12.1.1",
+    "previous": "12.1.0",
+    "source": "https://github.com/bzminer/bzminer/releases",
+    "download": {
+      "windows": "https://github.com/bzminer/bzminer/releases/download/v12.1.1/bzminer_v12.1.1_windows.zip",
+      "linux": " bzminer_v12.1.1_linux.tar.gz "
+    },
+    "cmd": {
+      "ergo": "bzminer -a ergo -p [SERVER]:[PORT] -w [WALLET] -r [WORKER]",
+      "ethash": "bzminer -a ethw -p ethproxy+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
+      "etchash": "bzminer -a etchash -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
+      "kawpow": "bzminer -a rvn -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
+      "kaspa": "bzminer -a kaspa -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]"
     }
   },
   "cryptodredge": {
@@ -92,8 +108,9 @@
       "etchash": "miner --algo etchash --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
       "equihash 125\/4": "miner --algo 125_4 --pers auto --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
       "equihash 144\/5": "miner --algo 144_5 --pers auto --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
-      "cuckoo": "miner --algo cuckarood29 --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
-      "kawpow": "miner --algo kawpow --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x"
+      "kawpow": "miner --algo kawpow --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
+      "firopow": "miner --algo firopow --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
+      "kaspa": "miner --algo kheavyhash --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x"
     },
     "cmdhi": {
       "ethash": "miner --algo eth --proto stratum --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
@@ -111,11 +128,11 @@
     },
     "cmd": {
       "equihash 144\/5": "lolMiner --coin AUTO144_5 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
-      "cuckoo": "lolMiner --coin GRIN-AD29 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
       "equihash 125\/4": "lolMiner --coin ZEL --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
       "ethash": "lolMiner -a ETHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x --ethstratum ETHPROXY --enablezilcache",
       "etchash": "lolMiner -a ETCHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x --ethstratum ETHPROXY --enablezilcache",
-      "autolykos2": "lolMiner -a AUTOLYKOS2 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x"
+      "autolykos2": "lolMiner -a AUTOLYKOS2 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x",
+      "kaspa": "lolMiner -a KASPA --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x"
     },
     "cmdhi": {
       "ethash": "lolMiner -a ETHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x --ethstratum ETHV1 --enablezilcache",
@@ -148,7 +165,6 @@
     "cmd": {
       "ethash": "nbminer -a ethash -o ethproxy+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
       "etchash": "nbminer -a etchash -o ethproxy+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
-      "cuckoo": "nbminer -a cuckarood -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
       "kawpow": "nbminer -a kawpow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]",
       "autolykos2": "nbminer -a autolykos2 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]"
     },
@@ -222,11 +238,11 @@
       "ethash": "teamredminer -a ethash -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x --eth_dag_cache=0",
       "etchash": "teamredminer -a etchash -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
       "x16rt": "teamredminer -a x16rt -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
-      "cuckoo": "teamredminer -a cuckarood29_grin -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
       "lyra2v3": "teamredminer -a lyra2rev3 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
       "autolykos2": "teamredminer -a autolykos2 -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
       "kawpow": "teamredminer -a kawpow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
-      "firopow": "teamredminer -a firopow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
+      "firopow": "teamredminer -a firopow -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
+      "kaspa": "teamredminer -a kas -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
     }
   },
   "tt-miner": {
