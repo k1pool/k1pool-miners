@@ -19,7 +19,7 @@
     }
   },
   "bzminer": {
-    "name": "Bminer",
+    "name": "BzMiner",
     "version": "12.1.1",
     "previous": "12.1.0",
     "source": "https://github.com/bzminer/bzminer/releases",
