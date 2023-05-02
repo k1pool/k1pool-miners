@@ -32,7 +32,8 @@
       "ethash": "bzminer -a ethw -p ethproxy+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
       "etchash": "bzminer -a etchash -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
       "kawpow": "bzminer -a rvn -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
-      "kaspa": "bzminer -a kaspa -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]"
+      "kaspa": "bzminer -a kaspa -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
+      "radiant": "bzminer -a radiant -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]"
     }
   },
   "cryptodredge": {
@@ -67,7 +68,8 @@
       "equihash 144\/5": "miner --algo 144_5 --pers auto --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
       "kawpow": "miner --algo kawpow --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
       "firopow": "miner --algo firopow --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
-      "kaspa": "miner --algo kheavyhash --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x"
+      "kaspa": "miner --algo kheavyhash --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
+      "radiant": "miner --algo radiant --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x"
     },
     "cmdhi": {
       "ethash": "miner --algo eth --proto stratum --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
