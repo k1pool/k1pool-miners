@@ -1,31 +1,12 @@
 {
-  "bminer": {
-    "name": "Bminer",
-    "version": "16.4.11",
-    "previous": "16.4.10",
-    "source": "https://www.bminer.me/releases/",
-    "download": {
-      "windows": "https://www.bminercontent.com/releases/bminer-v16.4.11-2849b5c-amd64.zip",
-      "linux": "https://www.bminercontent.com/releases/bminer-v16.4.11-2849b5c-amd64.tar.xz"
-    },
-    "cmd": {
-      "equihash": "bminer -uri stratum://[WALLET].[WORKER]@[SERVER]:[PORT]",
-      "ethash": "bminer -uri ethash://[WALLET].[WORKER]@[SERVER]:[PORT]",
-      "equihash 144\/5": "bminer -uri equihash1445://[WALLET].[WORKER]@[SERVER]:[PORT] -pers auto",
-      "kawpow": "bminer -uri raven://[WALLET].[WORKER]:x@[SERVER]:[PORT]"
-    },
-    "cmdhi": {
-      "ethash": "bminer -uri ethstratum://[WALLET].[WORKER]@[SERVER]:[PORT]"
-    }
-  },
   "bzminer": {
     "name": "BzMiner",
-    "version": "13.4.0",
+    "version": "15.2.0",
     "previous": "13.3.0",
     "source": "https://github.com/bzminer/bzminer/releases",
     "download": {
-      "windows": "https://github.com/bzminer/bzminer/releases/download/v13.4.0/bzminer_v13.4.0_windows.zip",
-      "linux": "https://github.com/bzminer/bzminer/releases/download/v13.4.0/bzminer_v13.4.0_linux.tar.gz"
+      "windows": "https://github.com/bzminer/bzminer/releases/download/v15.2.0/bzminer_v15.2.0_windows.zip",
+      "linux": "https://github.com/bzminer/bzminer/releases/download/v15.2.0/bzminer_v15.2.0_linux.tar.gz"
     },
     "cmd": {
       "autolykos2": "bzminer -a ergo -p [SERVER]:[PORT] -w [WALLET] -r [WORKER]",
@@ -33,7 +14,8 @@
       "etchash": "bzminer -a etchash -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
       "kawpow": "bzminer -a rvn -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
       "kaspa": "bzminer -a kaspa -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
-      "radiant": "bzminer -a radiant -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]"
+      "radiant": "bzminer -a radiant -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]",
+      "nexapow": "bzminer -a nexa -p stratum+tcp://[SERVER]:[PORT] -w [WALLET] -r [WORKER]"
     }
   },
   "cryptodredge": {
@@ -54,12 +36,12 @@
   },
   "gminer": {
     "name": "GMiner",
-    "version": "3.28",
+    "version": "3.40",
     "previous": "3.27",
     "source": "https://github.com/develsoftware/GMinerRelease/releases/latest",
     "download": {
-      "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/3.28/gminer_3_28_windows64.zip",
-      "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/3.28/gminer_3_28_linux64.tar.xz"
+      "windows": "https://github.com/develsoftware/GMinerRelease/releases/download/3.40/gminer_3_40_windows64.zip",
+      "linux": "https://github.com/develsoftware/GMinerRelease/releases/download/3.40/gminer_3_40_linux64.tar.xz"
     },
     "cmd": {
       "ethash": "miner --algo eth --server [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
@@ -78,12 +60,12 @@
   },
   "lolminer": {
     "name": "lolMiner",
-    "version": "1.70",
+    "version": "1.76",
     "previous": "1.69",
     "source": "https://github.com/Lolliedieb/lolMiner-releases/releases/latest",
     "download": {
-      "windows": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.70/lolMiner_v1.70_Win64.zip",
-      "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.70/lolMiner_v1.70_Lin64.tar.gz"
+      "windows": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.76/lolMiner_v1.76_Win64.zip",
+      "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.76/lolMiner_v1.76_Lin64.tar.gz"
     },
     "cmd": {
       "equihash 144\/5": "lolMiner --coin AUTO144_5 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x",
@@ -91,7 +73,8 @@
       "ethash": "lolMiner -a ETHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x --ethstratum ETHPROXY --enablezilcache",
       "etchash": "lolMiner -a ETCHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x --ethstratum ETHPROXY --enablezilcache",
       "autolykos2": "lolMiner -a AUTOLYKOS2 --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x",
-      "kaspa": "lolMiner -a KASPA --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x"
+      "kaspa": "lolMiner -a KASPA --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x",
+      "nexapow": "lolMiner -a NEXA --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --worker [WORKER] --pass x"
     },
     "cmdhi": {
       "ethash": "lolMiner -a ETHASH --pool [SERVER] --port [PORT] --user [WALLET].[WORKER] --pass x --ethstratum ETHV1 --enablezilcache",
@@ -118,39 +101,26 @@
       "etchash": "nbminer -a etchash -o nicehash+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER]"
     }
   },
-  "phoenixminer": {
-    "name": "PhoenixMiner",
-    "version": "6.2c",
-    "previous": "5.7b",
-    "source": "https://phoenixminer.info/downloads/",
-    "download": {
-      "windows": "https://phoenixminer.info/downloads/PhoenixMiner_6.2c_Windows.zip",
-      "linux": "https://phoenixminer.info/downloads/PhoenixMiner_6.2c_Linux.tar.gz"
-    },
-    "cmd": {
-      "ethash": "phoenixminer -worker [WORKER] -pool [SERVER]:[PORT] -wal [WALLET] -pass x -log 0 -dagrestart 0 -proto 2"
-    },
-    "cmdhi": {
-      "ethash": "phoenixminer -worker [WORKER] -pool [SERVER]:[PORT] -wal [WALLET] -pass x -log 0 -dagrestart 0 -proto 4"
-    }
-  },
   "rigel": {
     "name": "Rigel",
-    "version": "1.3.9",
+    "version": "1.4.8",
     "previous": "1.3.8",
     "source": "https://github.com/rigelminer/rigel/releases/latest",
     "download": {
-      "windows": "https://github.com/rigelminer/rigel/releases/download/1.3.9/rigel-1.3.9-win.zip",
-      "linux": "https://github.com/rigelminer/rigel/releases/download/1.3.9/rigel-1.3.9-linux.tar.gz"
+      "windows": "https://github.com/rigelminer/rigel/releases/download/1.4.8/rigel-1.4.8-win.zip",
+      "linux": "https://github.com/rigelminer/rigel/releases/download/1.4.8/rigel-1.4.8-linux.tar.gz"
     },
     "cmd": {
       "ethash": "rigel -a ethash -o [SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
       "etchash": "rigel -a etchash -o [SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
-      "kaspa": "rigel -a kheavyhash -o [SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
+      "kaspa": "rigel -a kheavyhash -o [SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
+      "nexapow": "rigel -a nexapow -o [SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
     },
     "cmdhi": {
       "ethash": "rigel -a ethash -o [SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
-      "etchash": "rigel -a etchash -o [SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
+      "etchash": "rigel -a etchash -o [SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
+      "kaspa": "rigel -a kheavyhash -o [SERVER]:[PORT] -u [WALLET].[WORKER] -p x",
+      "nexapow": "rigel -a nexapow -o [SERVER]:[PORT] -u [WALLET].[WORKER] -p x"
     }
   },
   "sgminer": {
@@ -191,12 +161,12 @@
   },
   "teamredminer": {
     "name": "TeamRedMiner",
-    "version": "0.10.9",
+    "version": "0.10.12",
     "previous": "0.10.8",
     "source": "https://github.com/todxx/teamredminer/releases",
     "download": {
-      "windows": "https://github.com/todxx/teamredminer/releases/download/v0.10.9/teamredminer-v0.10.9-win.zip",
-      "linux": "https://github.com/todxx/teamredminer/releases/download/v0.10.9/teamredminer-v0.10.9-linux.tgz"
+      "windows": "https://github.com/todxx/teamredminer/releases/download/v0.10.12/teamredminer-v0.10.12-win.zip",
+      "linux": "https://github.com/todxx/teamredminer/releases/download/v0.10.12/teamredminer-v0.10.12-linux.tgz"
     },
     "cmd": {
       "ethash": "teamredminer -a ethash -o stratum+tcp://[SERVER]:[PORT] -u [WALLET].[WORKER] -p x --eth_dag_cache=0",
@@ -235,7 +205,12 @@
     },
     "cmd": {
       "lyra2v3": "wildrig --print-full --algo lyra2v3 --opencl-threads auto --opencl-launch auto --url [SERVER]:[PORT] --user [WALLET].[WORKER] --pass x",
-      "x16rt": "wildrig --print-full --algo x16rt --opencl-threads auto --opencl-launch auto --url [SERVER]:[PORT] --user [WALLET].[WORKER] --pass x"
+      "x16rt": "wildrig --print-full --algo x16rt --opencl-threads auto --opencl-launch auto --url [SERVER]:[PORT] --user [WALLET].[WORKER] --pass x",
+      "firopow": "wildrig --print-full --algo firopow --opencl-threads auto --opencl-launch auto --url [SERVER]:[PORT] --user [WALLET].[WORKER] --pass x",
+      "kaspa": "wildrig --print-full --algo heavyhash --opencl-threads auto --opencl-launch auto --url [SERVER]:[PORT] --user [WALLET].[WORKER] --pass x",
+      "kawpow": "wildrig --print-full --algo kawpow --opencl-threads auto --opencl-launch auto --url [SERVER]:[PORT] --user [WALLET].[WORKER] --pass x",
+      "radiant": "wildrig --print-full --algo sha512256d --opencl-threads auto --opencl-launch auto --url [SERVER]:[PORT] --user [WALLET].[WORKER] --pass x",
+      "nexapow": "wildrig --print-full --algo nexapow --opencl-threads auto --opencl-launch auto --url [SERVER]:[PORT] --user [WALLET].[WORKER] --pass x"
     }
   }
 }
