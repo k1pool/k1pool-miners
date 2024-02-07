@@ -3,6 +3,7 @@
 Whats inside:
 
 AMD:
+
 lolzil  (lolminer that can mine zil) 1.82a (1.2.2)
 
 Teamredminer 0.10.17
